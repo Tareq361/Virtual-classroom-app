@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D308E"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="Classroom"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:textColorHint="#FDFCFC"
+        android:textColor="#FDFCFC"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#FDFCFC"
+        android:textColor="#FDFCFC"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#23A129"
+        android:text="Sign In" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="goToAnActivity"
+        android:text="Don't have an account?"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>

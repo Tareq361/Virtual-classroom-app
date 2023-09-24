@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#D4DADF"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+ <androidx.appcompat.widget.Toolbar
+     android:id="@+id/toolbar"
+     android:background="@drawable/toolbar_bg"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Classroom"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:gravity="left"
+    android:textSize="25sp"
+    >
+</TextView>
+
+     <com.mikhaellopez.circularimageview.CircularImageView
+         android:layout_width="65dp"
+         android:id="@+id/profilePic"
+         android:layout_height="65dp"
+         android:src="@drawable/ic_launcher_background"
+         app:civ_border_width="1dp"
+         app:civ_shadow="true"
+         android:layout_gravity="right"
+         app:civ_shadow_color="#A0AFA0"/>
+
+ </androidx.appcompat.widget.Toolbar>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/recyclerview_bg"
+    android:layout_height="wrap_content">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#1C8120"
+
+        android:backgroundTint="#2196F3"
+        android:src="@android:drawable/ic_input_add"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+
+</RelativeLayout>
+
+
+</LinearLayout>
